@@ -66,7 +66,7 @@ The solution combines Azure Monitor, Log Analytics Workspace, Microsoft Sentinel
 
 # 🏗️ Solution Architecture
 
-![Solution Architecture](images/solution_architecture.png)
+![Solution Architecture](images/solutionarchitecture.png)
 
 ---
 
