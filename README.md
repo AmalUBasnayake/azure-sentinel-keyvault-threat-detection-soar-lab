@@ -26,23 +26,18 @@ Enterprise SIEM • SOAR • KQL Analytics • Microsoft Sentinel • Azure Key 
 
 ---
 
-# 📷 Solution Architecture
+# 📷 Architecture Duagram
 
-> **Replace with your architecture diagram**
+![Architecture Diagram](images/architecture-diagram.png)
 
-```
-images/architecture-diagram.png
-```
 
 ---
 
 # 🖼️ Project Banner
 
-> **Replace with your banner**
 
-```
-images/banner.png
-```
+![Project Banner](images/banner.png)
+
 
 ---
 
@@ -71,28 +66,7 @@ The solution combines Azure Monitor, Log Analytics Workspace, Microsoft Sentinel
 
 # 🏗️ Solution Architecture
 
-```
-                  Azure Key Vault
-                         │
-          Diagnostic Settings Enabled
-                         │
-                         ▼
-            Log Analytics Workspace
-                         │
-                         ▼
-              Microsoft Sentinel SIEM
-                         │
-          ┌──────────────┼──────────────┐
-          ▼              ▼              ▼
-     Analytics      Incident       Investigation
-       Rules         Creation         Timeline
-          │
-          ▼
-      Automation Rule
-          │
-          ▼
- Incident Assignment / Response
-```
+![Solution Architecture](images/solution_architecture.png)
 
 ---
 
@@ -118,7 +92,7 @@ The Log Analytics Workspace acts as the centralized data repository where Azure 
 
 ### Screenshot
 
-![Create Log Analytics Workspace](screenshots/create_log_analytics_workspace.png)
+![Create Log Analytics Workspace](images/create_log_analytics_workspace.png)
 
 ---
 
@@ -128,7 +102,7 @@ Microsoft Sentinel was enabled on the Log Analytics Workspace to transform it in
 
 ### Screenshot
 
-![Add Sentinel](screenshots/add_sentinel_to_a_workspace.png)
+![Add Sentinel](images/add_sentinel_to_a_workspace.png)
 
 ---
 
@@ -138,7 +112,7 @@ Azure Key Vault diagnostic logs were configured to stream security events into L
 
 ### Screenshot
 
-![Diagnostic Settings](screenshots/diagnostic_setting.png)
+![Diagnostic Settings](images/diagnostic_setting.png)
 
 ---
 
@@ -155,7 +129,7 @@ The rule includes:
 
 ### Screenshot
 
-![Analytics Rule](screenshots/create_a_new_scheduled_rule.png)
+![Analytics Rule](images/create_a_new_scheduled_rule.png)
 
 ---
 
@@ -171,7 +145,7 @@ Automated actions include:
 
 ### Screenshot
 
-![Automation Rule](screenshots/automation_rule.png)
+![Automation Rule](images/automation_rule.png)
 
 ---
 
@@ -181,9 +155,9 @@ After telemetry collection and rule execution, Microsoft Sentinel generated a se
 
 ### Screenshot
 
-```
-screenshots/incident.png
-```
+
+![Incident](images/incident.png)
+
 
 ---
 
